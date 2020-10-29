@@ -5,9 +5,9 @@
         'sanitize_callback' => 'sanitize_hex_color',
     ));
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'gfbs_primary_color', array(
-        'label' => __( 'Primary Color', 'gfb_supply' ),
+        'label' => __( 'Primary Color', THEME_NAMESPACE ),
         'section' => 'gfbs_theme_colors',
-        'description' => __( 'Main branding color.', 'gfb_supply' )
+        'description' => __( 'Main branding color.', THEME_NAMESPACE )
     )));
 
     //secondary color
@@ -16,9 +16,9 @@
         'sanitize_callback' => 'sanitize_hex_color',
     ));
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'gfbs_secondary_color', array(
-        'label' => __( 'Secondary Color', 'gfb_supply' ),
+        'label' => __( 'Secondary Color', THEME_NAMESPACE ),
         'section' => 'gfbs_theme_colors',
-        'description' => __( 'Secondary branding color.', 'gfb_supply' )
+        'description' => __( 'Secondary branding color.', THEME_NAMESPACE )
     )));
 
     //info color
@@ -27,9 +27,9 @@
         'sanitize_callback' => 'sanitize_hex_color',
     ));
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'gfbs_info_color', array(
-        'label' => __( 'Info Color', 'gfb_supply' ),
+        'label' => __( 'Info Color', THEME_NAMESPACE ),
         'section' => 'gfbs_theme_colors',
-        'description' => __( 'Color to indicate informing customer.', 'gfb_supply' )
+        'description' => __( 'Color to indicate informing customer.', THEME_NAMESPACE )
     )));
 
     //success color
@@ -38,9 +38,9 @@
         'sanitize_callback' => 'sanitize_hex_color',
     ));
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'gfbs_success_color', array(
-        'label' => __( 'Success Color', 'gfb_supply' ),
+        'label' => __( 'Success Color', THEME_NAMESPACE ),
         'section' => 'gfbs_theme_colors',
-        'description' => __( 'Indicates error-free submission, upload, etc. Usually green.', 'gfb_supply' )
+        'description' => __( 'Indicates error-free submission, upload, etc. Usually green.', THEME_NAMESPACE )
     )));
 
     //danger color
@@ -49,9 +49,9 @@
         'sanitize_callback' => 'sanitize_hex_color',
     ));
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'gfbs_danger_color', array(
-        'label' => __( 'Danger Color', 'gfb_supply' ),
+        'label' => __( 'Danger Color', THEME_NAMESPACE ),
         'section' => 'gfbs_theme_colors',
-        'description' => __( 'Indicates error. Usually red.', 'gfb_supply' )
+        'description' => __( 'Indicates error. Usually red.', THEME_NAMESPACE )
     )));
 
     //warning color
@@ -60,9 +60,9 @@
         'sanitize_callback' => 'sanitize_hex_color',
     ));
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'gfbs_warning_color', array(
-        'label' => __( 'Warning Color', 'gfb_supply' ),
+        'label' => __( 'Warning Color', THEME_NAMESPACE ),
         'section' => 'gfbs_theme_colors',
-        'description' => __( 'Indicates potential error or bad practice. Usually yellow.', 'gfb_supply' )
+        'description' => __( 'Indicates potential error or bad practice. Usually yellow.', THEME_NAMESPACE )
     )));
 
     //light color
@@ -71,9 +71,9 @@
         'sanitize_callback' => 'sanitize_hex_color',
     ));
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'gfbs_light_color', array(
-        'label' => __( 'Light Color', 'gfb_supply' ),
+        'label' => __( 'Light Color', THEME_NAMESPACE ),
         'section' => 'gfbs_theme_colors',
-        'description' => __( 'Default color for light backgrounds, text on dark backgrounds.', 'gfb_supply' )
+        'description' => __( 'Default color for light backgrounds, text on dark backgrounds.', THEME_NAMESPACE )
     )));
 
     //dark color
@@ -82,8 +82,8 @@
         'sanitize_callback' => 'sanitize_hex_color',
     ));
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'gfbs_dark_color', array(
-        'label' => __( 'Dark Color', 'gfb_supply' ),
+        'label' => __( 'Dark Color', THEME_NAMESPACE ),
         'section' => 'gfbs_theme_colors',
-        'description' => __( 'Default color for dark backgrounds, text on light backgrounds.', 'gfb_supply' )
+        'description' => __( 'Default color for dark backgrounds, text on light backgrounds.', THEME_NAMESPACE )
     )));
     ?>

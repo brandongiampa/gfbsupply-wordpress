@@ -176,6 +176,8 @@ foreach ( $fonts_to_change as $font_to_change ) {
     $description = $font_to_change->getDescription();
     $color = get_theme_mod( "gfbs_${name}_font_color" ) ? get_theme_mod( "gfbs_${name}_font_color" ) : get_theme_mod( "gfbs_dark_color" );
     $spacing = get_theme_mod( "gfbs_${name}_font_spacing" ) ? get_theme_mod( "gfbs_${name}_font_spacing" ) : $font_to_change->getSpacing();
+    
+    //family
     $wp_customize->add_setting( "gfbs_${name}_font", array(
         'default' => $family,
         'type' => 'theme_mod'
@@ -187,10 +189,10 @@ foreach ( $fonts_to_change as $font_to_change ) {
            'label'      => __( $title, 'gfb_supply' ), 
            'description' => __( $description, 'gfb_supply' ),
            'settings'   => "gfbs_${name}_font",
-           'section'    => 'gfbs_theme_fonts', 
+           'section'    => THEME_FONTS_SECTION, 
            'type'    => 'select',
            'choices' => $gfbs_font_family_array,
-           'panel' => 'gfbs_panel'
+           'panel' => THEME_PANEL
        )
     ) );
     //size
@@ -203,10 +205,10 @@ foreach ( $fonts_to_change as $font_to_change ) {
         "gfbs_${name}_font_size",
         array(
            'settings'   => "gfbs_${name}_font_size",
-           'section'    => 'gfbs_theme_fonts', 
+           'section'    => THEME_FONTS_SECTION, 
            'type'    => 'select',
            'choices' => $gfbs_font_sizes_array,
-           'panel' => 'gfbs_panel'
+           'panel' => THEME_PANEL
        )
     ) );
     //weight
@@ -219,10 +221,10 @@ foreach ( $fonts_to_change as $font_to_change ) {
         "gfbs_${name}_font_weight",
         array(
            'settings'   => "gfbs_${name}_font_weight",
-           'section'    => 'gfbs_theme_fonts', 
+           'section'    => THEME_FONTS_SECTION, 
            'type'    => 'select',
            'choices' => $gfbs_font_weights_array,
-           'panel' => 'gfbs_panel'
+           'panel' => THEME_PANEL
        )
     ) );
     //color
@@ -231,7 +233,7 @@ foreach ( $fonts_to_change as $font_to_change ) {
         'sanitize_callback' => 'sanitize_hex_color',
     ));
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, "gfbs_${name}_font_color", array(
-        'section' => 'gfbs_theme_fonts',
+        'section' => THEME_FONTS_SECTION,
     )));
     //letter-spacing
     $wp_customize->add_setting( "gfbs_${name}_font_spacing", array(
@@ -243,10 +245,10 @@ foreach ( $fonts_to_change as $font_to_change ) {
         "gfbs_${name}_font_spacing",
         array(
            'settings'   => "gfbs_${name}_font_spacing",
-           'section'    => 'gfbs_theme_fonts', 
+           'section'    => THEME_FONTS_SECTION, 
            'type'    => 'select',
            'choices' => $gfbs_font_spacings_array,
-           'panel' => 'gfbs_panel'
+           'panel' => THEME_PANEL
        )
     ) );
 }
