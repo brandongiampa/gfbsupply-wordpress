@@ -1,0 +1,16 @@
+<?php
+/*
+* color scheme
+*/
+// define( 'GFBS_DEFAULT_PRIMARY_COLOR',  '#a52600' );
+define( 'GFBS_DEFAULT_PRIMARY_COLOR',  '#D83200' );
+define( 'GFBS_DEFAULT_SECONDARY_COLOR',  '#D89E00' );
+define( 'GFBS_DEFAULT_SUCCESS_COLOR', '#3AD800' );
+define( 'GFBS_DEFAULT_DANGER_COLOR', '#FF440C' );
+define( 'GFBS_DEFAULT_WARNING_COLOR', '#C7FF0C' );
+define( 'GFBS_DEFAULT_INFO_COLOR', '#00A6D8' );
+define( 'GFBS_DEFAULT_DARK_COLOR', '#160c00' );
+define( 'GFBS_DEFAULT_MUTED_DARK_COLOR', '#271d00' );
+define( 'GFBS_DEFAULT_LIGHT_COLOR', '#fffdf9' );
+define( 'GFBS_DEFAULT_MUTED_LIGHT_COLOR', '#eeecf9' );
+?>

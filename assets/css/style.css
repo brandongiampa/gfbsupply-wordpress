@@ -10903,6 +10903,24 @@ a.text-dark:focus {
   }
 }
 
+.page-title {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.shop-nav-select {
+  margin-bottom: 32px;
+  margin-top: 0;
+}
+
+.menu-item {
+  list-style: none;
+}
+
+.sub-menu {
+  padding-left: 16px;
+}
+
 #hero-image {
   position: relative;
   background-position: center;

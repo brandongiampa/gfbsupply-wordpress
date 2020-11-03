@@ -1,6 +1,7 @@
 <?php
 
 require_once( get_template_directory() . '/inc/global-constants.php');
+require_once( get_template_directory() . '/inc/global-defaults.php');
 
 /**
  * Register Custom Navigation Walker
@@ -19,6 +20,19 @@ register_nav_menus( array(
     'gfbs_wc_product_category_menu' => __( 'GFB Supply WooCommerce Product Category Menu', THEME_NAMESPACE ),
     'gfbs_logged_in_menu' => __( 'GFB Supply User Logged In Menu', THEME_NAMESPACE ),
     'gfbs_not_logged_in_menu' => __( 'GFB Supply User NOT Logged In Menu', THEME_NAMESPACE )   
+));
+
+if ( class_exists( 'WooCommerce' ) ){
+    require_once get_template_directory() . '/inc/wc-modifications.php';
+}
+
+register_sidebar(array(
+    'name' => 'Footer Left',
+    'description' => 'Widgets placed here will appear directly above the footer on the left, or at the top for smaller devices.'
+));
+register_sidebar(array(
+    'name' => 'Footer Right',
+    'description' => 'Widgets placed here will appear directly above the footer on the right, or at the bottom for smaller devices.'
 ));
 
 ?>
