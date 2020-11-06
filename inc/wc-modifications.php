@@ -67,6 +67,16 @@ function gfbs_modify_wc() {
     // }
 
     add_action( 'woocommerce_after_shop_loop_item_title', 'the_excerpt', 1);
+
+    function gfbs_echo_hr() {
+        echo '<hr>';
+    }
+    add_action( 'woocommerce_before_shop_loop', 'gfbs_echo_hr', 11 );
+
+    function gfbs_add_description_header() {
+        echo 'Description: ';
+    }
+    add_action( 'woocommerce_before_main_content', 'gfbs_add_description_header', 11 );
 }
 add_action( 'wp', 'gfbs_modify_wc');
 ?>

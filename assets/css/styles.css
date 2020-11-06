@@ -1,0 +1,120 @@
+li {
+    list-style: none;
+}
+.page-title {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.shop-nav-select {
+    margin-bottom: 32px;
+    margin-top: 0;
+}
+.shop-nav-column li {
+    border-bottom: 1px solid gray;
+}
+.menu {
+    
+}
+.menu-item {
+    list-style: none;
+}
+.sub-menu {
+    padding-left: 16px;
+}
+#hero-image {
+    position: relative;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#hero-image .hero-opaque {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+#hero-image .hero-text {
+    position: relative;
+}
+
+/*posts page*/
+.posts-thumbnail img {
+    width: 300px !important;
+    max-width: 300px !important;
+    height: auto;
+}
+@media only screen and (max-width: 991px) {
+    .posts-thumbnail img, .wp-post-image {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+}
+.author {
+    margin-bottom: 5px !important;
+}
+.meta {
+    font-style: italic;
+}
+
+/*blog*/
+.blog img {
+    max-width: 100%;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+img.size-post-thumbnail {
+    float: left;
+    max-width: 50%;
+    height: auto;
+    margin-bottom: 16px;
+    margin-right: 16px;
+}
+@media only screen and (max-width: 991px) {
+    img.size-post-thumbnail {
+        max-width: 100%;
+    }
+}
+.blog-author, .blog-date {
+    font-size: 14px;
+}
+
+/*pagination*/
+nav.navigation.pagination {
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+.navigation.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 0;
+}
+.navigation.pagination .nav-links a, .page-numbers.current {
+    margin: 0 5px;
+}
+.navigation.pagination .nav-links a {
+    font-weight: 500 !important;
+}
+a.prev.page-numbers::before {
+    content: "< ";
+}
+a.next.page-numbers::after {
+    content: " >";
+}
+
+/*woocommerce*/
+.term-description {
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+.term-description p {
+    font-style: italic;
+}
+#coupon_code {
+    width: 200px !important;
+}
+.related.products h2 {
+    margin-bottom: 15px;
+}

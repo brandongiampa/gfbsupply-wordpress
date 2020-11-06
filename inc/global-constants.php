@@ -51,12 +51,12 @@ define( 'GFBS_FONT_SIZES_ARRAY', array(
     '100px' => '100px',
 ));
 define( 'GFBS_FONT_FAMILY_ARRAY', array(
-    'arimo' => 'Arimo',
-    'grenze_gotisch' => 'Grenze Gotisch',
-    'oswald' => 'Oswald',
-    'play' => 'Play',
-    'righteous' => 'Righteous',
-    'roboto' => 'Roboto'
+    'Arimo' => __( 'Arimo', 'gfb_supply' ),
+    'Grenze_gotisch' => __( 'Grenze Gotisch', 'gfb_supply' ),
+    'Oswald' => __( 'Oswald', 'gfb_supply' ),
+    'Play' => __( 'Play', 'gfb_supply' ),
+    'Righteous' => __( 'Righteous', 'gfb_supply' ),
+    'Roboto' => __( 'Roboto', 'gfb_supply' )
 ));
 define( 'GFBS_LETTER_SPACINGS_ARRAY', array(
     '0px' => '0px',

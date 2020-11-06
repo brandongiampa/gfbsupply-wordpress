@@ -12,3 +12,4 @@
     <header>
         <?php get_template_part( 'template-parts/navbar' ); ?>
     </header>
+    <?php //get_template_part( 'template-parts/breadcrumb' ); ?>

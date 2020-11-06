@@ -88,7 +88,7 @@ $wp_customize->add_section( 'gfbs_colors_section', array(
             'default' => GFBS_DEFAULT_MUTED_LIGHT_COLOR,
             'sanitize_callback' => 'sanitize_hex_color',
         ));
-        $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'gfbs_light_color', array(
+        $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'gfbs_muted_light_color', array(
             'label' => __( 'Muted Light Color', 'gfb_supply' ),
             'section' => 'gfbs_colors_section',
             'description' => __( 'Default color for alternate backgrounds, understated text on dark backgrounds.', 'gfb_supply' )
@@ -96,7 +96,7 @@ $wp_customize->add_section( 'gfbs_colors_section', array(
 
         //dark color
         $wp_customize->add_setting( 'gfbs_dark_color', array(
-            'default' => GFBS_DEFAULT_LIGHT_COLOR,
+            'default' => GFBS_DEFAULT_DARK_COLOR,
             'sanitize_callback' => 'sanitize_hex_color',
         ));
         $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'gfbs_dark_color', array(
@@ -106,11 +106,11 @@ $wp_customize->add_section( 'gfbs_colors_section', array(
         )));
 
         //muted dark color
-        $wp_customize->add_setting( 'gfbs_dark_color', array(
+        $wp_customize->add_setting( 'gfbs_muted_dark_color', array(
             'default' => GFBS_DEFAULT_MUTED_DARK_COLOR,
             'sanitize_callback' => 'sanitize_hex_color',
         ));
-        $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'gfbs_dark_color', array(
+        $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'gfbs_muted_dark_color', array(
             'label' => __( 'Muted Dark Color', 'gfb_supply' ),
             'section' => 'gfbs_colors_section',
             'description' => __( 'Default color for alternate dark backgrounds, understated text on light backgrounds.', 'gfb_supply' )

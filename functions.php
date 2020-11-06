@@ -26,14 +26,53 @@ if ( class_exists( 'WooCommerce' ) ){
     require_once get_template_directory() . '/inc/wc-modifications.php';
 }
 
-register_sidebar(array(
-    'name' => 'Footer Left',
-    'description' => 'Widgets placed here will appear directly above the footer on the left, or at the top for smaller devices.'
-));
-register_sidebar(array(
-    'name' => 'Footer Right',
-    'description' => 'Widgets placed here will appear directly above the footer on the right, or at the bottom for smaller devices.'
-));
+require_once get_template_directory() . '/inc/register-sidebars.php';
+
+/**
+ * Generate breadcrumbs
+ * @author CodexWorld
+ * @authorURL www.codexworld.com
+ */
+function get_breadcrumb() {
+
+    echo '<nav aria-label="breadcrumb">';
+
+        echo '<ol class="breadcrumb">';
+
+            echo '<li class="breadcrumb-item">';
+
+                echo '<a href="' . get_home_url() . '">GFB Supply</a> | ';
+
+            echo '</li>';
+
+    echo '<a href="'.home_url().'" rel="nofollow">GFB Supply</a>';
+    if (is_category() || is_single()) {
+        echo "&nbsp;&nbsp;&#187;&nbsp;&nbsp;";
+        the_category(' &bull; ');
+            if (is_single()) {
+                echo " &nbsp;&nbsp;&#187;&nbsp;&nbsp; ";
+                the_title();
+            }
+    } elseif (is_page()) {
+        echo "&nbsp;&nbsp;&#187;&nbsp;&nbsp;";
+        echo the_title();
+    } elseif (is_search()) {
+        echo "&nbsp;&nbsp;&#187;&nbsp;&nbsp;Search Results for... ";
+        echo '"<em>';
+        echo the_search_query();
+        echo '</em>"';
+    } elseif (is_author()) {
+        echo "&nbsp;&nbsp;&#187;&nbsp;&nbsp;Search Results for... ";
+        echo '"<em>';
+        echo get_the_author_meta( 'first_name' ) . " " . get_the_author_meta( 'last_name' );
+        echo '</em>"';
+    }
+
+        echo '</ol>';
+
+    echo '</nav>';
+
+}
 
 ?>
 

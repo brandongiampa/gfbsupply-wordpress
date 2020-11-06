@@ -12,5 +12,5 @@ define( 'GFBS_DEFAULT_INFO_COLOR', '#00A6D8' );
 define( 'GFBS_DEFAULT_DARK_COLOR', '#160c00' );
 define( 'GFBS_DEFAULT_MUTED_DARK_COLOR', '#271d00' );
 define( 'GFBS_DEFAULT_LIGHT_COLOR', '#fffdf9' );
-define( 'GFBS_DEFAULT_MUTED_LIGHT_COLOR', '#eeecf9' );
+define( 'GFBS_DEFAULT_MUTED_LIGHT_COLOR', '#e8e8e8' );
 ?>

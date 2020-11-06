@@ -14,9 +14,11 @@ if ( have_posts() ):
 </div>
 
     <?php      
+
+    get_template_part( 'template-parts/pagination' );
+
     endwhile;
 endif;
-
 
 ?>
 
